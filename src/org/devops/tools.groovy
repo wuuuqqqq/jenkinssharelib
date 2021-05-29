@@ -10,7 +10,6 @@ def PrintMes(value,color){
         println(colors[color])
     }
 }
-
 //def PrintMes(content){
 //    println(content)
 //}
