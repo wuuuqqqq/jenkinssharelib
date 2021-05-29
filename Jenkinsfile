@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('jenkinslib') _
+@Library('jenkinssharelib') _
 
 def tools = new org.devops.tools()
 
@@ -65,6 +65,7 @@ pipeline {
                         timeout(time:30, unit:"MINUTES"){
                             script{
                                 print("代码扫描")
+                                tools.PrintMes("这是我的jenkins lib!!!!!!")
                                 tools.PrintMes("代码扫描",'green')
                             }
                         }
